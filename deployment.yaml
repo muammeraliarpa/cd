@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
   labels:
-    app: myapp 
+    app: myapp
+  name: myapp
 spec:
-  repicas : 2
+  repicas: 2
   selector:
     matchLabels:
-      app: myapp 
+      app: myapp
   template:
     metadata:
       labels:
-        app: myapp 
+        app: myapp
     spec:
       containers:
-      - name: myapp 
-        image: muammerarpa/myapp 
+      - image: muammerarpa/myapp
+        name: myapp
         ports:
         - containerPort: 80
