@@ -15,7 +15,7 @@ spec:
         app: myapp
     spec:
       containers:
-        image: muammerarpa/my-app:1
+        image: muammerarpa/myapp:1
         name: myapp
         ports:
           containerPort: 80
